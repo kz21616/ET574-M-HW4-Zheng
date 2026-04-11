@@ -31,8 +31,32 @@ class Slotmachine:
     def evaluate_spin(self,r1, r2 ,r3)
         if r1 = 0 or r2 = 0 or r3 = 0:
             print("Lose") 
-        elif r1 = r2 = r3:
+        elif r1 = r2 = r3 and r1 != 0:
             print("Win")
         else:
             print("spin Agian")
 
+def main():
+    machine = Slotmachine()
+
+    while True:
+        print("1. Play a round")
+        print("2. Exit")
+
+        choice = input("Selection:")
+
+
+        if choice == 1:
+            print(f"Reels: {r1}, {r2}, {r3}")
+            print(f"Total: {total}")
+            print(f"Results: {result}")
+
+        elif choice == 2
+            print("Exiting...")
+            break
+
+        else:
+            print("invalid choice.")
+
+
+main()
