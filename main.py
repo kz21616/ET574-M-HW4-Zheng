@@ -1,10 +1,6 @@
 # Kevin Zheng 24792025
 
-
 import random
-
-
-
 class Reel:
     def __init__ (self, max_value = 9):
         self.max_value = max_value
@@ -12,9 +8,6 @@ class Reel:
     def spin(self):
         return random.randint(0,self.max_value)
 
-   
-   
-  
 class Slotmachine:
     def __init__(self):
         self.r1 = Reel()
@@ -38,7 +31,6 @@ class Slotmachine:
         result = self.evaluate_spin(r1,r2,r3)
         return r1, r2, r3,total, result
   
-
 def main():
     machine = Slotmachine()
 
@@ -62,6 +54,5 @@ def main():
 
         else:
             print("invalid choice.")
-
 
 main()

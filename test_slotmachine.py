@@ -1,6 +1,5 @@
 # Kevin Zheng 24792025
 
-
 import unittest
 from main import Reel, SlotMachine
 
