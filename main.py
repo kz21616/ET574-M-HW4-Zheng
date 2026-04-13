@@ -1,3 +1,6 @@
+# Kevin Zheng 24792025
+
+
 import random
 
 
@@ -20,11 +23,11 @@ class Slotmachine:
     
     def evaluate_spin(self,r1, r2 ,r3):
         if r1 == 0 or r2 == 0 or r3 == 0:
-                return "Lose" 
-        elif r1 == r2 == r3 and r1 != 0:
-                return "Win"
+            return "Lose" 
+        elif r1 == r2 == r3:
+            return "Win"
         else:
-                return "spin Agian"
+            return "spin Agian"
 
     def play_round(self):
         r1 = self.r1.spin()
